@@ -3,6 +3,7 @@
 @media screen and (min-width:768px) and (max-width:992px){
     section#login{
         width:80vw;
+       
     }
     section#login > div#imagem{
        
@@ -12,8 +13,17 @@
     }
 
     section#login > #form{
-        float:right;
+        display:flex;
+        align-items: center;
+        margin:auto;
+        border-bottom:2px solid #481974;
         width:70%;
+    }
+    div#form h1{
+        font-size: 2em;
+    }
+    div#form p{
+        font-size:1.1em;
     }
 }
 
@@ -22,9 +32,13 @@
         width:950px;
     }
     section#login > div#imagem{
-        float:left;
+        float:right;
         width:50%;
         height:100%;
         border-radius: 0;
+    }
+    #form{
+        float:left;
+        width:50%;
     }
 }
