@@ -46,6 +46,7 @@ section#login > div#imagem{
 section#login > div#form{
     display:block;
     padding:10px;
+    border-bottom:2px solid #481974;
 }
 
 div#form h1{
@@ -55,4 +56,26 @@ div#form h1{
 }
 div#form p{
     font-size:0.9em;
+}
+
+
+
+div.social{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;  
+    font-size: 1.3rem;
+}
+div.social a{
+    text-decoration: none;
+    color:black;
+    padding: 0.6rem;
+    
+
+    transition: background 0.2s;
+    border-radius:50%;
+}
+div.social a:hover{
+    background-color: #5c5b5b4d;
 }

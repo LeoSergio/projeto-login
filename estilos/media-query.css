@@ -16,7 +16,6 @@
         display:flex;
         align-items: center;
         margin:auto;
-        border-bottom:2px solid #481974;
         width:70%;
     }
     div#form h1{
@@ -24,6 +23,11 @@
     }
     div#form p{
         font-size:1.1em;
+    }
+
+    div.social a{
+        font-size: 1.6rem;
+        padding: 1rem;
     }
 }
 
@@ -40,5 +44,16 @@
     #form{
         float:left;
         width:50%;
+    }
+    div.social{
+        border:1px solid transparent;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        
+        
+        
+        
     }
 }
