@@ -5,9 +5,7 @@
         width:80vw;
     }
     section#login > div#imagem{
-        float:left;
-        width:30%;
-        height:100%;
+       
        background-position: bottom center;
        border-radius: 0;
         
