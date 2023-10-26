@@ -22,14 +22,16 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   background-color: #fff;
   width: 250px;
   height: 550px;
   border-radius: 20px;
   overflow: hidden;
+
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+
+  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
@@ -62,13 +64,17 @@ form > div.campo {
   margin: 5px 0px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 
   border: 1px solid #8a41ce;
   border-radius: 5px;
 }
 div.campo > label {
   display: none;
+}
+div.campo > input {
+  height: 25px;
+  width: calc(100% - 41px);
 }
 div.campo #icon {
   font-size: 1.5em;
@@ -97,8 +103,8 @@ form > input[type="submit"] {
   text-decoration: none;
   color: #000;
 }
-.botao a:hover{
-    text-decoration: underline;
+.botao a:hover {
+  text-decoration: underline;
 }
 div.social {
   display: flex;
@@ -110,9 +116,8 @@ div.social a {
   text-decoration: none;
   color: black;
   padding: 0.6rem;
-
-  transition: background 0.2s;
   border-radius: 50%;
+  transition: background 0.2s;
 }
 div.social a:hover {
   background-color: #5c5b5b4d;
