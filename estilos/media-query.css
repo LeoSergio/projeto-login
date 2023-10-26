@@ -1,59 +1,63 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:992px){
-    section#login{
-        width:80vw;
-       
-    }
-    section#login > div#imagem{
-       
-       background-position: bottom center;
-       border-radius: 0;
-        
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#login {
+    width: 80vw;
+  }
+  section#login > div#imagem {
+    background-position: bottom center;
+    border-radius: 0;
+  }
 
-    section#login > #form{
-        display:flex;
-        align-items: center;
-        margin:auto;
-        width:70%;
-    }
-    div#form h1{
-        font-size: 2em;
-    }
-    div#form p{
-        font-size:1.1em;
-    }
-
-    div.social a{
-        font-size: 1.6rem;
-        padding: 1rem;
-    }
+  section#login > #form {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+  }
+  div#form h1 {
+    font-size: 2em;
+  }
+  div#form p {
+    font-size: 1.1em;
+  }
+  form > div.campo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  div.social a {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
 }
 
-@media screen and (min-width:992px){
-    section#login{
-        width:950px;
-    }
-    section#login > div#imagem{
-        float:right;
-        width:50%;
-        height:100%;
-        border-radius: 0;
-    }
-    #form{
-        float:left;
-        width:50%;
-    }
-    div.social{
-        border:1px solid transparent;
-        margin:auto;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        
-        
-        
-        
-    }
+@media screen and (min-width: 992px) {
+  section#login {
+    width: 950px;
+  }
+  section#login > div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+  }
+  #form {
+    float: left;
+    width: 50%;
+  }
+
+  form > div.campo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  div.social {
+    border: 1px solid transparent;
+    margin: auto;
+    padding:1.4rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
 }

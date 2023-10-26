@@ -1,81 +1,119 @@
 @charset "UTF-8";
 
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-image: linear-gradient(to top, #49a09d, #5f2c82);
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-}
-html,body{
-    background-image: linear-gradient(to top, #49a09d,#5f2c82);
-    width:100vw;
-    height:100vh;
-}
-main{
-    position:relative;
-    width:100vw;
-    height:100vh;
-   
-    
-}
-section#login{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-
-    background-color: #fff;
-    width: 250px;
-    height:500px;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-    transition: width .3s, height .3s;
-    transition-timing-function: ease ;
-}
-
-section#login > div#imagem{
-    display:block;
-    background:  #481974 url(../imagens/back-login.jpg ) no-repeat;
-    background-size: cover;
-    border-radius: 20px  20px 0 0;
-    height:200px;
+  background-color: #fff;
+  width: 250px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
 }
 
-section#login > div#form{
-    display:block;
-    padding:10px;
-    border-bottom:2px solid #481974;
+section#login > div#imagem {
+  display: block;
+  background: #481974 url(../imagens/back-login.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  height: 200px;
 }
 
-div#form h1{
-    text-align: center;
-    margin-bottom:1rem;
-    font-size: 1.7em;
-}
-div#form p{
-    font-size:0.9em;
+section#login > div#form {
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid #481974;
 }
 
-
-
-div.social{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;  
-    font-size: 1.3rem;
+div#form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.7em;
 }
-div.social a{
-    text-decoration: none;
-    color:black;
-    padding: 0.6rem;
-    
-
-    transition: background 0.2s;
-    border-radius:50%;
+div#form p {
+  font-size: 0.9em;
 }
-div.social a:hover{
-    background-color: #5c5b5b4d;
+form > div.campo {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #8a41ce;
+  border-radius: 5px;
+}
+div.campo > label {
+  display: none;
+}
+div.campo #icon {
+  font-size: 1.5em;
+}
+form > input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #773baf;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.botao {
+  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: center;
+
+  background-color: transparent;
+}
+.botao a {
+  text-decoration: none;
+  color: #000;
+}
+.botao a:hover{
+    text-decoration: underline;
+}
+div.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+div.social a {
+  text-decoration: none;
+  color: black;
+  padding: 0.6rem;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+div.social a:hover {
+  background-color: #5c5b5b4d;
 }
